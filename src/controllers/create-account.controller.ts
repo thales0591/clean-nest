@@ -16,6 +16,7 @@ const createAccountBodySchema = z.object({
   email: z.string().email(),
   password: z.string(),
 })
+
 type CreateAccountBodySchema = z.infer<typeof createAccountBodySchema>
 
 @Controller('/accounts')

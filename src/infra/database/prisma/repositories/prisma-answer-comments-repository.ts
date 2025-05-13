@@ -18,7 +18,7 @@ export class PrismaAnswerCommentsRepository
     throw new Error('Method not implemented.')
   }
 
-  delete(answerComment: AnswerCommentt): Promise<void> {
+  delete(answerComment: AnswerComment): Promise<void> {
     throw new Error('Method not implemented.')
   }
 

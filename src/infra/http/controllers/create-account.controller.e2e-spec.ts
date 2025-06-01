@@ -14,7 +14,6 @@ describe('Create account (E2E)', () => {
     }).compile()
 
     app = moduleRef.createNestApplication()
-
     prisma = moduleRef.get(PrismaService)
 
     await app.init()

@@ -24,7 +24,7 @@ export class CommentWithAuthor extends ValueObject<CommentWithAuthorProps> {
   }
 
   get author() {
-    return this.props.commentId
+    return this.props.author
   }
 
   get createdAt() {

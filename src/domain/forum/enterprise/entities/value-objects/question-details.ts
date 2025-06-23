@@ -8,8 +8,8 @@ export interface QuestionDetailsProps {
   authorId: UniqueEntityId
   author: string
   title: string
-  slug: Slug
   content: string
+  slug: Slug
   attachments: Attachment[]
   bestAnswerId?: UniqueEntityId | null
   createdAt: Date

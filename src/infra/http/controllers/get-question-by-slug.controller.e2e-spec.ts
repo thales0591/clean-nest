@@ -14,7 +14,7 @@ describe('Get question by slug (E2E)', () => {
   let app: INestApplication
   let studentFactory: StudentFactory
   let questionFactory: QuestionFactory
-  let attachemntFactory: AttachmentFactory
+  let attachmentFactory: AttachmentFactory
   let questionAttachmentFactory: QuestionAttachmentFactory
   let jwt: JwtService
 
@@ -32,7 +32,7 @@ describe('Get question by slug (E2E)', () => {
     app = moduleRef.createNestApplication()
     studentFactory = moduleRef.get(StudentFactory)
     questionFactory = moduleRef.get(QuestionFactory)
-    attachemntFactory = moduleRef.get(AttachmentFactory)
+    attachmentFactory = moduleRef.get(AttachmentFactory)
     questionAttachmentFactory = moduleRef.get(QuestionAttachmentFactory)
     jwt = moduleRef.get(JwtService)
 
@@ -53,7 +53,7 @@ describe('Get question by slug (E2E)', () => {
       content: 'question content',
     })
 
-    const attachement = await attachemntFactory.makePrismaAttachment({
+    const attachement = await attachmentFactory.makePrismaAttachment({
       title: 'Some attachment',
     })
 

@@ -18,7 +18,7 @@ describe('Read notification (E2E)', () => {
   beforeAll(async () => {
     const moduleRef = await Test.createTestingModule({
       imports: [AppModule, DatabaseModule],
-      providers: [StudentFactory, NotificationFactory, PrismaService],
+      providers: [StudentFactory, NotificationFactory],
     }).compile()
 
     app = moduleRef.createNestApplication()
